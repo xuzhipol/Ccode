@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ccode", "Ccode\Ccode.vcxproj", "{9D4F2316-6549-4481-9F70-ABCD2C37DEBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		release|ARM = release|ARM
+		release|Win32 = release|Win32
+		release|x64 = release|x64
+		release|x86 = release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D4F2316-6549-4481-9F70-ABCD2C37DEBD}.Debug|ARM.ActiveCfg = Debug|ARM
+		{9D4F2316-6549-4481-9F70-ABCD2C37DEBD}.Debug|ARM.Build.0 = Debug|ARM
+		{9D4F2316-6549-4481-9F70-ABCD2C37DEBD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9D4F2316-6549-4481-9F70-ABCD2C37DEBD}.Debug|Win32.Build.0 = Debug|Win32
+		{9D4F2316-6549-4481-9F70-ABCD2C37DEBD}.Debug|x64.ActiveCfg = Debug|x64
+		{9D4F2316-6549-4481-9F70-ABCD2C37DEBD}.Debug|x64.Build.0 = Debug|x64
+		{9D4F2316-6549-4481-9F70-ABCD2C37DEBD}.Debug|x86.ActiveCfg = Debug|Win32
+		{9D4F2316-6549-4481-9F70-ABCD2C37DEBD}.Debug|x86.Build.0 = Debug|Win32
+		{9D4F2316-6549-4481-9F70-ABCD2C37DEBD}.release|ARM.ActiveCfg = release|x64
+		{9D4F2316-6549-4481-9F70-ABCD2C37DEBD}.release|ARM.Build.0 = release|x64
+		{9D4F2316-6549-4481-9F70-ABCD2C37DEBD}.release|Win32.ActiveCfg = release|x64
+		{9D4F2316-6549-4481-9F70-ABCD2C37DEBD}.release|Win32.Build.0 = release|x64
+		{9D4F2316-6549-4481-9F70-ABCD2C37DEBD}.release|x64.ActiveCfg = release|x64
+		{9D4F2316-6549-4481-9F70-ABCD2C37DEBD}.release|x64.Build.0 = release|x64
+		{9D4F2316-6549-4481-9F70-ABCD2C37DEBD}.release|x86.ActiveCfg = release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F229A5AC-3893-4971-A385-9F661DC00E20}
+	EndGlobalSection
+EndGlobal
