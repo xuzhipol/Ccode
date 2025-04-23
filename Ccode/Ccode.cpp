@@ -1,7 +1,7 @@
 #include "Ccode.h"
 #include "ConvolutionalcodeClass.h"
 
-Ccode::Ccode(QWidget *parent)     //Õû¸öÍ¼ÐÎÓÃ»§½çÃæµÄ¹¹Ôìº¯Êý£¬½øÐÐ½çÃæÉèÖÃºÍÐÅºÅÓë²ÛµÄÁ¬½Ó
+Ccode::Ccode(QWidget *parent)     //æ•´ä¸ªå›¾å½¢ç”¨æˆ·ç•Œé¢çš„æž„é€ å‡½æ•°ï¼Œè¿›è¡Œç•Œé¢è®¾ç½®å’Œä¿¡å·ä¸Žæ§½çš„è¿žæŽ¥
     : QMainWindow(parent)
 {
     ui.setupUi(this);
@@ -15,17 +15,17 @@ Ccode::Ccode(QWidget *parent)     //Õû¸öÍ¼ÐÎÓÃ»§½çÃæµÄ¹¹Ôìº¯Êý£¬½øÐÐ½çÃæÉèÖÃºÍÐÅ
 Ccode::~Ccode()
 {}
 
-void Ccode::encode_display()     //²Ûº¯Êý¶¨Òå£¬Êä³ö¾í»ýÂë
+void Ccode::encode_display()     //æ§½å‡½æ•°å®šä¹‰ï¼Œè¾“å‡ºå·ç§¯ç 
 {
     ConvolutionalcodeClass b;
     if (ui.lineEdit->text().size() == 0 && global.size() != 0)
     {
         QString k= b.Encode(global);
-        ui.plainTextEdit->appendPlainText("Convolutional code: " + k);
+        ui.plainTextEdit->appendPlainText("Convolutional å·ç§¯ç code: " + k);
         return;
     }
     QString a = b.Encode(ui.lineEdit->text());
-    if (a.size() == 0)          //Êä³ö±¨´íÐÅÏ¢
+    if (a.size() == 0)          //è¾“å‡ºæŠ¥é”™ä¿¡æ¯
     {
         ui.plainTextEdit->appendPlainText("Error, only 0 and 1 are allowed in the input sequence");
         return;
@@ -44,7 +44,7 @@ void Ccode::rdecode_display()
         return;
     }
     QString a = b.rDecode(ui.lineEdit->text());
-    if (a.size() == 0)          //Êä³ö±¨´íÐÅÏ¢
+    if (a.size() == 0)          //è¾“å‡ºæŠ¥é”™ä¿¡æ¯
     {
         ui.plainTextEdit->appendPlainText("Error, only 0 and 1 are allowed in the input sequence and the length of the sequence must be an integer multiple of 3");
         return;
@@ -63,7 +63,7 @@ void Ccode::ydecode_display()
         return;
     }
     QString a = b.yDecode(ui.lineEdit->text());
-    if (a.size() == 0)          //Êä³ö±¨´íÐÅÏ¢
+    if (a.size() == 0)          //è¾“å‡ºæŠ¥é”™ä¿¡æ¯
     {
         ui.plainTextEdit->appendPlainText("Error,only 0 and 1 are allowed in the input sequence and the length of the sequence must be an integer multiple of 3");
         return;
@@ -93,7 +93,7 @@ void Ccode::File_input()
     }
     QTextStream astream(&afile);
     astream.setAutoDetectUnicode(true);
-    global = astream.readAll();   //¶ÁÈ¡ÎÄ¼þÖÐµÄÈ«²¿ÄÚÈÝ
+    global = astream.readAll();   //è¯»å–æ–‡ä»¶ä¸­çš„å…¨éƒ¨å†…å®¹
     ui.plainTextEdit->appendPlainText("The file has been loaded");
     afile.close();
     return;
